@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title= title
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com' crossorigin)
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    #background
+    main 
+      h1 Michael Shelby Blanton
+      p IT Support Manager, Software Engineer and More!
+
+      .row
+        nav.left-menu
+          ul.menu
+            li#back Background
+            li#expert Expertise
+            li#certs Certifications
+            li#exp Experience
+            li#ed Education
+            li#proj Projects
+
+        .right-content
+          block content
+
+
+    footer
+      ul.social 
+        li 
+          a(href="https://www.linkedin.com/in/shelbyblanton/" target="_blank") LinkedIn
+        li 
+          a(href="https://github.com/shelbyblanton" target="_blank") GitHub
+        li 
+          a(href="https://replit.com/@shelbyblanton?tab=repls" target="_blank") Replit
+        li 
+          a(href="" target="_blank") Twitter
+        li 
+          a(href="https://instagram.com/shelbyphxaz" target="_blank") Instagram
+
+      .footer
+         | &copy; Michael Shelby Blanton. All Rights Reserved.<br>
+         | Background-image courtesy of <a href="https://unsplash.com/@dvandijk" target="_blank">David Van Dijk at Unsplash</a>.
+
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js")
+  script(src="/javascripts/msb.js")

@@ -1,0 +1,248 @@
+body {
+	/* font-family: 'Inter', sans-serif; */
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+  color: #111;
+  padding: 25px 25px 25px 100px;
+}
+
+#background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(../images/david-van-dijk-C.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+h1 {
+  margin: 100px auto auto auto;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  column-gap: 20px;
+}
+
+.left-menu {
+  margin-right: 30px;
+  padding-top: 50px;
+  max-width: 340px;
+}
+
+.right-content {
+  padding-top: 31px;
+  max-width: 850px;
+}
+
+ul.menu {
+  list-style-type: none;
+  font-family: 'Inter', sans-serif;
+  margin: auto auto auto -40px;
+}
+
+ul.menu li {
+  line-height: 26px;
+  cursor: pointer;
+}
+
+ul.social {
+  list-style-type: none;
+  margin-left: -40px;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  column-gap: 20px;
+}
+
+ul.social li::after {
+  content: "|";
+  padding-left: 20px;
+}
+
+ul.social li:last-child::after {
+  content: "";
+}
+
+.expert-subject {
+  float: left;
+  vertical-align: top;
+  margin-right: 25px;
+  padding-right: 25px;
+  border-right: solid 1px #999;
+  min-height: 500px;
+}
+
+.expert-subject:last-child {
+  border-right: none;
+}
+
+.expert-subject p {
+  margin-top: 0;
+}
+
+ul.skill-list {
+  font-size: 13px;
+  list-style-type: "- ";
+  line-height: 20px;
+  margin-left: -29px;
+}
+
+ul.sublist {
+  line-height: 18px;
+  margin-left: -29px;
+}
+
+section {
+  display: none;
+  text-align: left;
+}
+
+.size-smaller {
+  font-size: 13px;
+}
+
+.job-title {
+  cursor: pointer;
+}
+
+.job-title-name {
+  display: inline-block;
+  width: 475px;
+}
+
+.drawer-icon-a {
+  display: inline-block;
+  width: 40px;
+  padding-left: 10px;
+}
+
+.job-content{
+  display: none;
+  box-sizing:content-box;
+}
+
+.job-content p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.divider {
+	height: 5px;
+	text-align: center;
+	border-bottom: solid 1px #999;
+	margin: 20px auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 100px;
+}
+
+.footer {
+  font-size: 11px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* OLD CSS CODE */
+
+/* #crest {
+	max-width: 244px;
+	height: 250px;
+  background-image: url(../_content/_images/msb_monogram.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+	margin: 20px auto 0 auto;
+}
+
+#name {
+	max-width: 244px;
+	height: 69px;
+	background-image: url(../_content/_images/msb_name.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-align: center;
+	margin: 20px auto;
+}
+
+#nav {
+	text-align: center;
+	margin: auto;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #956a00;
+}
+
+#nav a:link{
+	color: #956a00;
+	text-decoration: none;
+}
+
+#nav a:visited{
+	color: #956a00;
+	text-decoration: none;
+}
+
+#nav a:hover{
+	color: #fbe8b6;
+	text-decoration: none;
+}
+
+.hilite {
+	color: #572b00;
+}
+
+.hiliteB {
+	color: #000;
+	opacity:0.2;
+	filter:alpha(opacity=20);
+}
+
+#subnav {
+	text-align: center;
+	margin: auto;
+	color: #ecb158;
+	letter-spacing: 1px;
+}
+
+#sub_contain {
+	max-width: 600px;
+	text-align: center;
+	margin: auto;
+}
+
+.indent {
+	margin-left: 40px;
+}
+
+ul.subList {
+	list-style-type: none;
+}
+
+
+ */
