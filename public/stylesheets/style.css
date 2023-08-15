@@ -3,19 +3,44 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 	font-size: 16px;
   color: #111;
-  padding: 25px 25px 25px 100px;
+  padding: 25px 25px 25px 80px;
 }
 
 #background {
   position: absolute;
-  left: 0;
+  left: 20px;
   top: 0;
   background-image: url(../images/david-van-dijk-C.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: right top;
   width: 100vw;
   height: 100vh;
   z-index: 0;
+}
+
+.burger {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #202622;
+  color: #a5b3a6;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+nav.box {
+  /* display: none; */
 }
 
 main {
@@ -28,27 +53,16 @@ a {
   color: #111;
 }
 
+nav a {
+  color: #a5b3a6;
+}
+
 h1 {
   margin: 100px auto auto auto;
 }
 
 h3 {
   font-weight: 300;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  column-gap: 20px;
-}
-
-.left-menu {
-  margin-right: 30px;
-  padding-top: 50px;
-  max-width: 340px;
 }
 
 .right-content {
@@ -59,11 +73,11 @@ h3 {
 ul.menu {
   list-style-type: none;
   font-family: 'Inter', sans-serif;
-  margin: auto auto auto -40px;
+  margin: 50px auto auto -20px;
 }
 
 ul.menu li {
-  line-height: 26px;
+  line-height: 46px;
   cursor: pointer;
 }
 
@@ -118,7 +132,6 @@ ul.sublist {
 }
 
 section {
-  display: none;
   text-align: left;
 }
 
