@@ -1,6 +1,5 @@
 body {
 	font-family: 'Inter', sans-serif;
-  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
 	font-size: 16px;
   color: #111;
   padding: 25px 25px 25px 80px;
@@ -22,6 +21,8 @@ body {
 main {
   position: relative;
   z-index: 1;
+  max-width: 750px;
+  min-height: 690px;
 }
 
 a {
@@ -64,13 +65,13 @@ ul.social {
   column-gap: 20px;
 }
 
-ul.social li::after {
-  content: "|";
-  padding-left: 20px;
+img.soc-icon {
+  width: 24px;
+  height: 24px;
 }
 
-ul.social li:last-child::after {
-  content: "";
+p, li {
+  line-height: 22px;
 }
 
 .expert-subject {
@@ -143,8 +144,9 @@ section {
 }
 
 footer {
-  position: absolute;
-  bottom: 100px;
+  position: relative;
+  /* bottom: 100px; */
+  z-index: 5;
 }
 
 .footer {

@@ -12,10 +12,11 @@
   
   $('.job-title').click(function (e) {
     target = $(this).attr('id');
+    console.log(target)
 
     if ($(this).hasClass("open")) {
       $('p#'+target+' .drawer-icon img').fadeOut(200, function() {
-        $('p#'+target+' .drawer-icon img').attr('src', '_content/_images/arrow-down.svg');
+        $('p#'+target+' .drawer-icon img').attr('src', '../images/arrow-down.svg');
       }).fadeIn(200);
 
       $(this).removeClass("open");
@@ -23,7 +24,7 @@
     } else {
       $('p#'+target+' .drawer-icon img')
         .fadeOut(200, function() {
-            $('p#'+target+' .drawer-icon img').attr('src', '_content/_images/arrow-up.svg');
+            $('p#'+target+' .drawer-icon img').attr('src', '../images/arrow-up.svg');
         })
         .fadeIn(200);
 

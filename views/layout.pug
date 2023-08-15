@@ -24,10 +24,10 @@ html
             a(href="/background") Background
           li#expert 
             a(href="/expertise") Expertise
-          li#certs 
-            a(href="/certifications") Certifications
           li#exp 
             a(href="/experience") Experience
+          li#certs 
+            a(href="/certifications") Certifications
           li#ed 
             a(href="/education") Education
           li#proj 
@@ -38,7 +38,6 @@ html
     main 
       h1 
         a(href="/") Michael Shelby Blanton
-      p IT Support Manager, Software Engineer and More!
 
       block content
 
@@ -46,18 +45,24 @@ html
     footer
       ul.social 
         li 
-          a(href="https://www.linkedin.com/in/shelbyblanton/" target="_blank") LinkedIn
+          a(href="https://www.linkedin.com/in/shelbyblanton/" target="_blank") 
+            img(class="soc-icon" src="../images/linkedin.svg", alt="LinkedIn")
         li 
-          a(href="https://github.com/shelbyblanton" target="_blank") GitHub
+          a(href="https://github.com/shelbyblanton" target="_blank")
+            img(class="soc-icon" src="../images/github-b.svg", alt="GitHub")
         li 
-          a(href="https://replit.com/@shelbyblanton?tab=repls" target="_blank") Replit
+          a(href="https://replit.com/@shelbyblanton?tab=repls" target="_blank") 
+            img(class="soc-icon" src="../images/replit-b.svg", alt="Replit")
         li 
-          a(href="" target="_blank") Twitter
+          a(href="" target="_blank")
+            img(class="soc-icon" src="../images/twitter-b.svg", alt="Twitter")
         li 
-          a(href="https://instagram.com/shelbyphxaz" target="_blank") Instagram
+          a(href="https://instagram.com/shelbyphxaz" target="_blank")
+            img(class="soc-icon" src="../images/instagram.svg", alt="Instagram")
 
+      - var year = new Date().getFullYear()
       .footer
-         | &copy; Michael Shelby Blanton. All Rights Reserved.<br>
+         | &copy; !{year} Michael Shelby Blanton. All Rights Reserved.<br>
          | Background-image courtesy of <a href="https://unsplash.com/@dvandijk" target="_blank">David Van Dijk at Unsplash</a>.
 
   script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js")

@@ -1,7 +1,77 @@
 extends layout
 
+mixin drawerIcon
+  span.drawer-icon
+    img(src="../images/arrow-down.svg" style="width: 20px;")
+
 block content
+  
   section#back
     h2 Experience
-    p SmartRent
-    p More here...
+
+    p SmartRent Technologies, Inc. <i>Scottsdale, AZ</i>
+    p.job-title#csm
+      span.job-title-name <strong>CORPORATE SYSTEMS MANAGER</strong> #[+drawerIcon]
+      | Jan 2022 - May 2023
+    .job-content#csm-content
+      p.size-smaller Manage the scope of systems and IT projects by planning, organizing, directing, controlling, and coordinating the acquisition, development, maintenance, and support projects. Lead a team of nine staff (IT Support Specialists, Corporate Systems Analysts) in employee onboards/offboards, migration, development, testing, and data/application integration operations for 650+ users in a Google Workspace/Google Cloud Directory environment. Apply an expertise in testing, deployment, administration, and security by acting as a strategist and visionary for IT solutions for high performance and efficiency. Admin for intranet, corporate visual display systems, travel/expense systems, and Atlassian Systems across three locations.
+      ul.size-smaller
+        li Advanced compliance and reduced risk exposure by managing all new vendor/application onboard approvals, renewals, license adjustments as well as all SOX/ISO documentation and auditor compliance communication.
+        li Amplified efficiency by driving continuous improvement that focused on delivering workflows, tool availability, automations, and solutions while also writing intranet articles to ensure up to date information for staff.
+        li Codified, simplified, and centralized communications and policy documentation leading to reductions in delays during projects and integrations.
+        li Enabled cost effective and efficient IT system structure design enhancements for deployment by leveraging strong technical abilities and familiarity in the latest technologies to recommend upgrades when necessary.
+        li Enhanced project management while managing complex systems, software, applications, storage, and security ICT projects by leading the team in following the path of action items for on-time delivery while providing life cycle support.
+
+    p.job-title#cse
+      span.job-title-name <strong>CORPORATE SYSTEMS ENGINEER</strong> #[+drawerIcon] 
+      | Jan 2019 - Dec 2021
+    .job-content#cse-content
+      p.size-smaller Managed programmatic data integrations of corporate applications as well as the internal intranet system. Achieved efficiency and effectiveness targets while serving on a multi-disciplined team in providing Tier II support by overseeing troubleshooting, requirements gathering, solution management. Role required extensive knowledge of departments to implement processes and procedures that reduce inefficiencies. Administered company-wide visual communications network.
+      ul.size-smaller
+        li Maximized uptime by creating tools that further aid additional systems/data integrations.
+        li Improved systems and application platforms by identifying opportunities to increase efficiency and informational flow through various systems analytics and data reporting activities.
+        li Fortified IT’s ability to support staff by facilitating a greater inter-department communication and understanding of what each department does and the processes, policies, workflows, and tools used.
+        li Improved employee satisfaction and reduced turnover by fostering a team environment that championed collaboration/communication and planning company-wide events (leadership meetings, holiday parties, outings).
+
+    p.job-title#sesr
+      span.job-title-name#sesr <strong>SOFTWARE ENGINEER</strong> #[+drawerIcon] 
+      | Oct 2017 - Dec 2019
+    .job-content#sesr-content
+      p.size-smaller Leverage skills in design, programming, developing, and testing to serve on the full-stack international team in an agile environment building SAAS applications. Role requires software development coding, customization, and post production support for API systems, mobile, and web integration. Participated in Agile sprint prep and administration. Managed and administered company-wide visual communications network across various locations (YoDeck, 15 screens).
+      ul.size-smaller
+        li Enriched the user experience by developing APIs and database interfaces that were easy to use and user friendly.
+        li Value-added project management by maintaining version control and pull requests via GitHub/GitLab.
+
+    .divider
+
+    p Consolidated Knowledge, LLC <i>Scottsdale, AZ</i>
+    p.job-title#seck
+      span.job-title-name#seck <strong>SOFTWARE ENGINEER</strong> #[+drawerIcon] 
+      | May 2016 - Oct 2017
+    .job-content#seck-content
+      p.size-smaller Description Here
+      ul.size-smaller
+        li Focus 1
+
+    .divider
+
+    p Voice Media Group, Inc. <i>Phoenix, AZ</i>
+    p.job-title#wdpvmg
+      span.job-title-name#wdpvmg <strong>WEB DEVELOPER & PROGRAMMER</strong> #[+drawerIcon] 
+      | June 2013 - May 2016
+    .job-content#wdpvmg-content
+      p.size-smaller Description here
+      ul.size-smaller
+        li Focus 1
+
+    .divider
+
+    p Lionwood Visual LLC <i>Phoenix, AZ</i>
+    p.job-title#wdplv
+      span.job-title-name#wdplv <strong>WEB DEVELOPER & PROGRAMMER</strong> #[+drawerIcon] 
+      | Jan 2019 - June 2023
+    .job-content#wdplv-content
+      p.size-smaller Description here
+      ul.size-smaller
+        li Focus 1
+          
