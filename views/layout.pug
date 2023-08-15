@@ -2,29 +2,45 @@ doctype html
 html
   head
     meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width,height=device-height,initial-scale=1.0")
     title= title
     link(rel='preconnect', href='https://fonts.googleapis.com')
     link(rel='preconnect', href='https://fonts.gstatic.com' crossorigin)
     link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    
     #background
+    
+    .menu-tab
+        #one
+        #two
+        #three
+
+    .menu-hide
+      nav
+        ul.menu
+          li#back 
+            a(href="/background") Background
+          li#expert 
+            a(href="/expertise") Expertise
+          li#certs 
+            a(href="/certifications") Certifications
+          li#exp 
+            a(href="/experience") Experience
+          li#ed 
+            a(href="/education") Education
+          li#proj 
+            a(href="/projects") Projects
+          li#home 
+            a(href="/") Home
+    
     main 
-      h1 Michael Shelby Blanton
+      h1 
+        a(href="/") Michael Shelby Blanton
       p IT Support Manager, Software Engineer and More!
 
-      .row
-        nav.left-menu
-          ul.menu
-            li#back Background
-            li#expert Expertise
-            li#certs Certifications
-            li#exp Experience
-            li#ed Education
-            li#proj Projects
-
-        .right-content
-          block content
+      block content
 
 
     footer

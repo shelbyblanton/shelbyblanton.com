@@ -1,6 +1,6 @@
 body {
-	/* font-family: 'Inter', sans-serif; */
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-family: 'Inter', sans-serif;
+  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
 	font-size: 16px;
   color: #111;
   padding: 25px 25px 25px 80px;
@@ -8,7 +8,7 @@ body {
 
 #background {
   position: absolute;
-  left: 20px;
+  left: 0;
   top: 0;
   background-image: url(../images/david-van-dijk-C.jpg);
   background-size: cover;
@@ -17,30 +17,6 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 0;
-}
-
-.burger {
-  position: relative;
-  width: 25px;
-  height: 25px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 100%;
-  background-color: #202622;
-  color: #a5b3a6;
-  padding: 0 15px;
-  z-index: 1;
-}
-
-nav.box {
-  /* display: none; */
 }
 
 main {
@@ -73,12 +49,7 @@ h3 {
 ul.menu {
   list-style-type: none;
   font-family: 'Inter', sans-serif;
-  margin: 50px auto auto -20px;
-}
-
-ul.menu li {
-  line-height: 46px;
-  cursor: pointer;
+  margin: auto auto auto -40px;
 }
 
 ul.social {
@@ -181,81 +152,81 @@ footer {
   font-family: 'Inter', sans-serif;
 }
 
-/* OLD CSS CODE */
 
-/* #crest {
-	max-width: 244px;
-	height: 250px;
-  background-image: url(../_content/_images/msb_monogram.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	text-align: center;
-	margin: 20px auto 0 auto;
+/* MENU FUNCTIONS */
+.menu-tab {
+  width: 90px;
+  height: 70px;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
 }
-
-#name {
-	max-width: 244px;
-	height: 69px;
-	background-image: url(../_content/_images/msb_name.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	text-align: center;
-	margin: 20px auto;
+.menu-tab div {
+  width: 33px;
+  height: 4px;
+  background-color: #2d2d2d;
+  display: block;
+  margin: 5px 28px;
+  transition: all 0.6s ease-in-out;
 }
-
-#nav {
-	text-align: center;
-	margin: auto;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	color: #956a00;
-}
-
-#nav a:link{
-	color: #956a00;
-	text-decoration: none;
-}
-
-#nav a:visited{
-	color: #956a00;
-	text-decoration: none;
-}
-
-#nav a:hover{
-	color: #fbe8b6;
-	text-decoration: none;
-}
-
-.hilite {
-	color: #572b00;
-}
-
-.hiliteB {
-	color: #000;
-	opacity:0.2;
-	filter:alpha(opacity=20);
-}
-
-#subnav {
-	text-align: center;
-	margin: auto;
-	color: #ecb158;
-	letter-spacing: 1px;
-}
-
-#sub_contain {
-	max-width: 600px;
-	text-align: center;
-	margin: auto;
-}
-
-.indent {
-	margin-left: 40px;
-}
-
-ul.subList {
-	list-style-type: none;
+.menu-tab div:nth-child(1) {
+  margin-top: 20px;
 }
 
 
- */
+.menu-tab.active {
+  left: 175px;
+  transition: all 600ms ease-in-out;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.menu-tab.active #one {
+  transform: translateY(9px) rotate(-135deg);
+  transition: all 0.6s ease-in-out;
+  background-color: #202622;
+}
+.menu-tab.active #two {
+  opacity: 0;
+  transition: 0.4s ease;
+}
+.menu-tab.active #three {
+  transform: translateY(-9px) rotate(-45deg);
+  transition: all 0.6s ease-in-out;
+  background-color: #202622;
+}
+
+.menu-hide {
+  width: 175px;
+  left: -175px;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  transition: all 0.6s ease-in-out;
+}
+.menu-hide nav ul li {
+  height: 50px;
+  list-style-type: none;
+  text-align: right;
+  line-height: 50px;
+  transition: all 0.5s ease;
+}
+.menu-hide nav ul li:hover {
+  background-color: #a5b3a6;
+  transition: all 0.5s ease;
+}
+.menu-hide nav ul li a {
+  padding: 25px 25px;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-weight: 500;
+}
+
+.menu-hide.show {
+  left: 0px;
+  background-color: #202622;
+  color: #a5b3a6;
+  transition: all 0.6s ease-in-out;
+}
