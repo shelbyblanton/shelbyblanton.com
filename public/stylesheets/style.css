@@ -18,6 +18,10 @@ main {
 
 a {
   text-decoration: none;
+  color: #546655;
+}
+
+h1 a {
   color: #111;
 }
 
