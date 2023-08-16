@@ -3,26 +3,17 @@ body {
 	font-size: 16px;
   color: #111;
   padding: 25px 25px 25px 80px;
-}
-
-#background {
-  position: absolute;
-  left: 0;
-  top: 0;
   background-image: url(../images/david-van-dijk-C.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right top;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0;
 }
 
 main {
   position: relative;
   z-index: 1;
   max-width: 750px;
-  min-height: 690px;
+  min-height: 640px;
 }
 
 a {
@@ -145,8 +136,8 @@ section {
 
 footer {
   position: relative;
-  /* bottom: 100px; */
   z-index: 5;
+  margin-top: 50px;
 }
 
 .footer {
