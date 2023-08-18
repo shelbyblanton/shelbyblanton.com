@@ -2,11 +2,11 @@ body {
 	font-family: 'Inter', sans-serif;
 	font-size: 16px;
   color: #111;
-  padding: 25px 25px 25px 80px;
+  padding: 25px 25px 25px 25px;
   background-image: url(../images/david-van-dijk-C.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: left top;
 }
 
 main {
@@ -147,6 +147,7 @@ footer {
 .footer {
   font-size: 11px;
   font-family: 'Inter', sans-serif;
+  line-height: 15px;
 }
 
 
@@ -226,4 +227,19 @@ footer {
   background-color: #202622;
   color: #a5b3a6;
   transition: all 0.6s ease-in-out;
+}
+
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    padding: 25px 25px 25px 80px;
+    background-position: right top;
+  }
 }
