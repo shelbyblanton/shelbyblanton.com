@@ -1,6 +1,7 @@
 body {
 	font-family: 'Inter', sans-serif;
 	font-size: 16px;
+  min-height: 100vh;
   color: #111;
   padding: 25px 25px 25px 25px;
   background-image: url(../images/david-van-dijk-C.jpg);
@@ -31,10 +32,16 @@ nav a {
 
 h1 {
   margin: 100px auto auto auto;
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.25em;
 }
 
 h3 {
   font-weight: 300;
+  font-size: 1.05em;
 }
 
 .right-content {
@@ -144,11 +151,17 @@ footer {
   margin-top: 50px;
 }
 
+a.contact {
+  display: block;
+  margin-bottom: 10px;
+}
+
 .footer {
   font-size: 11px;
   font-family: 'Inter', sans-serif;
   line-height: 15px;
 }
+
 
 
 /* MENU FUNCTIONS */
@@ -232,14 +245,20 @@ footer {
 
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) {
-  body {
-    height: 100vh;
-  }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1180px) {
   body {
     padding: 25px 25px 25px 80px;
     background-position: right top;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.17em;
   }
 }
