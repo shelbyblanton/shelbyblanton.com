@@ -1,14 +1,4 @@
 (function ($) {
-
-  $('.menu-tab').click(function(){
-    $('.menu-hide').toggleClass('show');
-    $('.menu-tab').toggleClass('active');
-  });
-
-  $('.menu-hide > ul > li > a').click(function(){
-    $('.menu-hide').removeClass('show');
-    $('.menu-tab').removeClass('active');
-  });
   
   $('.job-title').click(function (e) {
     target = $(this).attr('id');

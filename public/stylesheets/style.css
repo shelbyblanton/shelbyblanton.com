@@ -14,7 +14,7 @@ main {
   position: relative;
   z-index: 1;
   max-width: 750px;
-  min-height: 640px;
+  min-height: 400px;
 }
 
 a {
@@ -22,17 +22,17 @@ a {
   color: #546655;
 }
 
-h1 a {
-  color: #111;
-}
-
 nav a {
   color: #a5b3a6;
 }
 
 h1 {
-  margin: 100px auto auto auto;
+  margin-top: -5px;
   font-size: 1.75em;
+}
+
+h1 a {
+  color: #111;
 }
 
 h2 {
@@ -42,17 +42,6 @@ h2 {
 h3 {
   font-weight: 300;
   font-size: 1.05em;
-}
-
-.right-content {
-  padding-top: 31px;
-  max-width: 850px;
-}
-
-ul.menu {
-  list-style-type: none;
-  font-family: 'Inter', sans-serif;
-  margin: auto auto auto -40px;
 }
 
 ul.social {
@@ -151,6 +140,19 @@ footer {
   margin-top: 50px;
 }
 
+ul.nav-low {
+  margin-left: -40px;
+  list-style-type: none;;
+}
+
+ul.nav-low li {
+  line-height: 28px;
+}
+
+ul.nav-low li a:hover {
+  color: #111;
+}
+
 a.contact {
   display: block;
   margin-bottom: 10px;
@@ -160,86 +162,6 @@ a.contact {
   font-size: 11px;
   font-family: 'Inter', sans-serif;
   line-height: 15px;
-}
-
-
-
-/* MENU FUNCTIONS */
-.menu-tab {
-  width: 90px;
-  height: 70px;
-  position: fixed;
-  z-index: 100;
-  top: 0px;
-  left: 0px;
-  cursor: pointer;
-  transition: all 0.6s ease-in-out;
-}
-.menu-tab div {
-  width: 33px;
-  height: 4px;
-  background-color: #2d2d2d;
-  display: block;
-  margin: 5px 28px;
-  transition: all 0.6s ease-in-out;
-}
-.menu-tab div:nth-child(1) {
-  margin-top: 20px;
-}
-
-
-.menu-tab.active {
-  left: 175px;
-  transition: all 600ms ease-in-out;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.menu-tab.active #one {
-  transform: translateY(9px) rotate(-135deg);
-  transition: all 0.6s ease-in-out;
-  background-color: #202622;
-}
-.menu-tab.active #two {
-  opacity: 0;
-  transition: 0.4s ease;
-}
-.menu-tab.active #three {
-  transform: translateY(-9px) rotate(-45deg);
-  transition: all 0.6s ease-in-out;
-  background-color: #202622;
-}
-
-.menu-hide {
-  width: 175px;
-  left: -175px;
-  height: 100vh;
-  position: fixed;
-  z-index: 10;
-  top: 0px;
-  transition: all 0.6s ease-in-out;
-}
-.menu-hide nav ul li {
-  height: 50px;
-  list-style-type: none;
-  text-align: right;
-  line-height: 50px;
-  transition: all 0.5s ease;
-}
-.menu-hide nav ul li:hover {
-  background-color: #a5b3a6;
-  transition: all 0.5s ease;
-}
-.menu-hide nav ul li a {
-  padding: 25px 25px;
-  text-decoration: none;
-  color: #f1f1f1;
-  font-weight: 500;
-}
-
-.menu-hide.show {
-  left: 0px;
-  background-color: #202622;
-  color: #a5b3a6;
-  transition: all 0.6s ease-in-out;
 }
 
 
@@ -254,6 +176,7 @@ a.contact {
   }
   h1 {
     font-size: 2em;
+    margin: 100px auto auto auto;
   }
   h2 {
     font-size: 1.5em;
