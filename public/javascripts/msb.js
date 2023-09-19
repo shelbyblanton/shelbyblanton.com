@@ -23,4 +23,9 @@
     }
   });
 
+  $('.soc-icon').hover(function (e) {
+      $(this).next().slideToggle();
+      return false;
+  });
+
 })(jQuery); // End of use strict
